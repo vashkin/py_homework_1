@@ -9,7 +9,7 @@
 - x=-34; y=-30 -> 3"""
 
 
-def inDat():
+def InDat():
     xyz = ["X", "Y"]
     numb = []
 
@@ -18,7 +18,7 @@ def inDat():
     return numb
 
 
-def axisC(numb):
+def AxisC(numb):
 
     if numb[0] < 0 and numb[1] > 0:
         axis = 2
@@ -34,4 +34,4 @@ def axisC(numb):
     return axis
 
 
-print(axisC(inDat()))
+print(AxisC(InDat()))

@@ -7,9 +7,9 @@
 # - 7 -> да
 # - 1 -> нет
 
-inNumber = int(input("Введите число дня недели: "))
-print(inNumber)
-if (5 < inNumber < 8):
+in_number = int(input("Введите число дня недели: "))
+print(in_number)
+if (5 < in_number < 8):
     print("да")
-elif (0 < inNumber < 6):
+elif (0 < in_number < 6):
     print("нет")

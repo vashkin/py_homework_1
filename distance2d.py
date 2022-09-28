@@ -9,21 +9,21 @@
 from math import sqrt
 
 
-def InDate():
+def received_data():
     xyz = ["A X", "A Y", "B X", "B Y"]
-    numb = []
+    received_number = []
     for i in xyz:
-        numb.append(int(input(f"Введите {i} :")))
-    return numb
+        received_number.append(int(input(f"Введите {i} :")))
+    return received_number
 
 
-def Distance(numb):
-    a = [numb[0], numb[1]]
-    b = [numb[2], numb[3]]
+def Distance(received_number):
+    a = [received_number[0], received_number[1]]
+    b = [received_number[2], received_number[3]]
     x = b[0]-a[0]
     y = b[1]-a[1]
     ab = sqrt((x**2)+(y**2))
     return ab
 
 
-print(round(Distance(InDate()), 2))
+print(round(Distance(received_data()), 2))
